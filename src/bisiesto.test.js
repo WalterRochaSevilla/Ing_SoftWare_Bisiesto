@@ -10,4 +10,7 @@ describe("Bisiesto", () => {
   it("Debería devolver true si es dividendo de 4 pero no de 100", () => {
     expect(es_bisiesto(2016)).toEqual(true);
   });
+  it("Debería devolver false si para todos los demás", () => {
+    expect(es_bisiesto(2018)).toEqual(false);
+  });
 });
